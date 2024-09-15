@@ -12,40 +12,26 @@ Contributing
 License
 Installation
 Clone the repository:
-
-bash
-Copy code
 git clone https://github.com/yourusername/your-repo.git
+
 Navigate to the project directory:
-
-bash
-Copy code
 cd your-repo
+
 Install dependencies:
-
-bash
-Copy code
 npm install
-Create a .env file in the root directory of the project with the following content:
 
-env
-Copy code
+Create a .env file in the root directory of the project with the following content:
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/yourdbname
 Adjust the PORT and MONGO_URI values as needed.
 
 Usage
-Start the server:
 
-bash
-Copy code
+Start the server:
 npm start
 The server will run on http://localhost:5000.
 
 For development mode, including auto-reloading with nodemon, use:
-
-bash
-Copy code
 npm run dev
 API Endpoints
 Authentication
@@ -60,25 +46,16 @@ Database Setup
 Install MongoDB if you haven't already. You can follow the MongoDB installation guide.
 
 Start MongoDB using the command:
-
-bash
-Copy code
 mongod
 Ensure your MongoDB instance is running and is accessible via the URI specified in the .env file.
 
 Testing
 Run tests:
-
-bash
-Copy code
 npm test
 This will execute any tests defined in your project.
 
 Deployment
 Build the project (optional):
-
-bash
-Copy code
 npm run build
 Deploy to a hosting service (e.g., Heroku, AWS, DigitalOcean) as per your requirements. Ensure environment variables are set correctly in your deployment environment.
 
